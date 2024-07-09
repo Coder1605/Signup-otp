@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="download1.jpg" alt="Sunset">
+        <form id="registrationForm">
+            <h2>SignUp</h2>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="button" id="sendOtpBtn">Send OTP</button>
+
+            <div id="otpSection" style="display: none;">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" required>
+                <button type="button" id="verifyOtpBtn">Verify OTP</button>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
